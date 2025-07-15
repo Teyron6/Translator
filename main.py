@@ -27,7 +27,7 @@ date = 'April 12, 2023'
 
 opinion = f'{title}\n\n{author}\n{date}\n\n{text}'
 
-lang = input(f'Список доступных языков:\n{LANGUAGES}\n')
+lang = input(f'Список доступных языков:\n{LANGUAGES}\nВведите язык: ')
 result =  translator.translate(opinion, dest=lang).text
 
 print(result)
